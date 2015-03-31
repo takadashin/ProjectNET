@@ -1,0 +1,33 @@
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe.config
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\Pharmacy.pdb
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\EntityFramework.dll
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\EntityFramework.xml
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csprojResolveAssemblyReference.cache
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmCustomers.resources
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.exe
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.pdb
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\Pharmacy.mdf
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\bin\Debug\Pharmacy_log.ldf
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmMain.resources
+D:\DATA\IT solution program CANADA\Visual studio .Net\Project(1)\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmLogin.resources
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe.config
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.exe
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.pdb
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\Pharmacy.mdf
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\Pharmacy_log.ldf
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\Pharmacy.pdb
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\EntityFramework.dll
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\bin\Debug\EntityFramework.xml
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csprojResolveAssemblyReference.cache
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmCustomers.resources
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmLogin.resources
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmMain.resources
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
+F:\ITS\Semester 2\5212 - Windows Appl Dev Using .NET\Project\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
+C:\Users\khaiv_000\Desktop\Pharmacy_2\Pharmacy\bin\Debug\Pharmacy.exe.config
+C:\Users\khaiv_000\Desktop\Pharmacy_2\Pharmacy\obj\Debug\Pharmacy.exe
+C:\Users\khaiv_000\Desktop\Pharmacy_2\Pharmacy\obj\Debug\Pharmacy.pdb
