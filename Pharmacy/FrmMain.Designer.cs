@@ -63,14 +63,14 @@
             // MnItemLog
             // 
             this.MnItemLog.Name = "MnItemLog";
-            this.MnItemLog.Size = new System.Drawing.Size(152, 22);
+            this.MnItemLog.Size = new System.Drawing.Size(107, 22);
             this.MnItemLog.Text = "Log In";
             this.MnItemLog.Click += new System.EventHandler(this.MnItemLog_Click);
             // 
             // MnItemExit
             // 
             this.MnItemExit.Name = "MnItemExit";
-            this.MnItemExit.Size = new System.Drawing.Size(152, 22);
+            this.MnItemExit.Size = new System.Drawing.Size(107, 22);
             this.MnItemExit.Text = "Exit";
             this.MnItemExit.Click += new System.EventHandler(this.MnItemExit_Click);
             // 
@@ -90,6 +90,7 @@
             this.MnItemAccounts.Name = "MnItemAccounts";
             this.MnItemAccounts.Size = new System.Drawing.Size(152, 22);
             this.MnItemAccounts.Text = "Accounts";
+            this.MnItemAccounts.Click += new System.EventHandler(this.MnItemAccounts_Click);
             // 
             // MnItemDrugs
             // 

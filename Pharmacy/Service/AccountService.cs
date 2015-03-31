@@ -1,5 +1,6 @@
 ﻿using Pharmacy.DAO;
 using Pharmacy.Domain;
+using Pharmacy.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,17 @@ namespace Pharmacy.Service
         {
             return dao;
         }
+
+        public Accounts getByUserName(string userName)
+        {
+            List<Accounts> accounts = getBy(Constants.ACC_USERNAME, userName, true);
+            if (accounts != null && accounts.Count > 0)
+            {
+                return accounts[0];
+            }
+            return null;
+        }
+        
 
     }
 }

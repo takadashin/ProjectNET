@@ -32,6 +32,7 @@ namespace Pharmacy.DAO
             account.UserName = dr[Constants.ACC_USERNAME].ToString();
             account.Password = dr[Constants.ACC_PASSWORD].ToString();
             account.Name = dr[Constants.ACC_NAME].ToString();
+            account.DateOfBirth = (DateTime)dr[Constants.ACC_BIRTH];
             account.Gender = dr[Constants.ACC_GENDER].ToString();
             account.Address = dr[Constants.ACC_ADD].ToString();
             account.PhoneNum = dr[Constants.ACC_PHONE].ToString();
@@ -47,6 +48,7 @@ namespace Pharmacy.DAO
             data.Add(new Criterion(Constants.ACC_USERNAME, account.UserName));
             data.Add(new Criterion(Constants.ACC_PASSWORD, account.Password));
             data.Add(new Criterion(Constants.ACC_NAME, account.Name));
+            data.Add(new Criterion(Constants.ACC_BIRTH, account.DateOfBirth));
             data.Add(new Criterion(Constants.ACC_GENDER, account.Gender));
             data.Add(new Criterion(Constants.ACC_ADD, account.Address));
             data.Add(new Criterion(Constants.ACC_PHONE, account.PhoneNum));

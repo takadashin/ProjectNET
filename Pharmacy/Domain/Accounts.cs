@@ -11,6 +11,7 @@ namespace Pharmacy.Domain
         private string userName;
         private string password;
         private string name;
+        DateTime dateOfBirth;
         private string gender;
         private string address;
         private string phoneNum;
@@ -26,6 +27,18 @@ namespace Pharmacy.Domain
             set
             {
                 userName = value;
+            }
+        }
+
+        public DateTime DateOfBirth
+        {
+            get
+            {
+                return dateOfBirth;
+            }
+            set
+            {
+                dateOfBirth = value;
             }
         }
 

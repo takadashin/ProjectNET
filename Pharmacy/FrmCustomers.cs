@@ -42,15 +42,12 @@ namespace Pharmacy
         }
         private bool validate()
         {
-            if (txtName.Text.Trim() == "")
+            if (Utils.CommonMethod.checkEmptyString(txtName.Text, "Please Enter Name", "Error"))
             {
-                MessageBox.Show("Please Enter Name", "Error");
                 return false;
             }
-            int yearOfBirth;
-            if (txtYearOfBirth.Text.Trim() != "" && !Int32.TryParse(txtYearOfBirth.Text, out yearOfBirth))
+            if (Utils.CommonMethod.checkNotInt(txtYearOfBirth.Text, "Year Of Birth is Number", "Error"))
             {
-                MessageBox.Show("Year Of Birth is Number", "Error");
                 return false;
             }
             return true;
@@ -60,6 +57,8 @@ namespace Pharmacy
         {
             DataSet ds = custService.dsGetAll(Constants.ID, true);
             dgvCustomers.DataSource = ds.Tables[0];
+            cmbGender.DataSource = Constants.gender;
+            cmbGender.SelectedIndex = 0;
             btnDelete.Enabled=false;
             btnSave.Enabled=false;
         }
@@ -125,9 +124,8 @@ namespace Pharmacy
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            int number;
             List<Criterion> criterions = new List<Criterion>();
-            if (Int32.TryParse(txtSearch.Text, out number))
+            if (!Utils.CommonMethod.checkNotInt(txtSearch.Text, null, null))
             {
                 criterions.Add(new Criterion(Constants.ID, txtSearch.Text, "or"));
                 criterions.Add(new Criterion(Constants.CUST_BIRTH, txtSearch.Text, "or"));
@@ -150,7 +148,7 @@ namespace Pharmacy
                 customer = custService.getById(dgvCustomers.Rows[e.RowIndex].Cells[0].Value);
                 txtId.Text = customer.Id.ToString();
                 txtName.Text = customer.Name;
-                cmbGender.Text = customer.Gender;
+                cmbGender.SelectedIndex = Utils.CommonMethod.getComboboxIndex(Constants.gender,customer.Gender);
                 txtAdd.Text = customer.Address;
                 txtYearOfBirth.Text = customer.YearOfBirth.ToString();
                 txtInsurance.Text = customer.Insurance;

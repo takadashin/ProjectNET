@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Pharmacy.Utils
 {
     class Constants
-    {
+    {   public static string[] gender= {"Male","Female"};
+        public static string[] type = { "User", "Admin" };
         public const string ID = "Id";
         //Customer
         public const string CUST_TB = "CUSTOMERS";
@@ -25,11 +26,11 @@ namespace Pharmacy.Utils
         public const string ACC_PASSWORD = "Password";
         public const string ACC_NAME = "Name";
         public const string ACC_GENDER = "Gender";
-  //      public const string ACC_BIRTH = "DateOfBirth";
+        public const string ACC_BIRTH = "DateOfBirth";
         public const string ACC_ADD = "Address";
         public const string ACC_PHONE = "PhoneNum";
         public const string ACC_INS = "Insurance";
-        public const string ACC_TYPE = "Type";    
+        public const string ACC_TYPE = "Type";   
   
         //Drug
         public const string DRUG_TB = "DRUGS";

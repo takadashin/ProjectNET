@@ -11,6 +11,7 @@
     <AssemblyName>Pharmacy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -74,6 +74,12 @@
     <Compile Include="Domain\Customers.cs" />
     <Compile Include="Domain\DomainBasic.cs" />
     <Compile Include="Domain\Drugs.cs" />
+    <Compile Include="FrmAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccounts.Designer.cs">
+      <DependentUpon>FrmAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,10 @@
     <Compile Include="Settings.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\Criterion.cs" />
+    <Compile Include="Utils\CommonMethod.cs" />
+    <EmbeddedResource Include="FrmAccounts.resx">
+      <DependentUpon>FrmAccounts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCustomers.resx">
       <DependentUpon>FrmCustomers.cs</DependentUpon>
     </EmbeddedResource>

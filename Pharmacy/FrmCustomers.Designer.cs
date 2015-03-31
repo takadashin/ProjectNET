@@ -170,7 +170,7 @@
             this.txtAdd.MaxLength = 50;
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(331, 20);
-            this.txtAdd.TabIndex = 4;
+            this.txtAdd.TabIndex = 6;
             // 
             // label5
             // 
@@ -255,16 +255,16 @@
             // 
             // cmbGender
             // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
+            this.cmbGender.AutoCompleteCustomSource.AddRange(new string[] {
             "Male",
             "Female"});
+            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGender.FormattingEnabled = true;
             this.cmbGender.Location = new System.Drawing.Point(77, 374);
             this.cmbGender.MaxLength = 10;
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(331, 21);
-            this.cmbGender.TabIndex = 21;
-            this.cmbGender.Text = "Male";
+            this.cmbGender.TabIndex = 4;
             // 
             // FrmCustomers
             // 

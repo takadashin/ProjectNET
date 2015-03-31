@@ -26,18 +26,40 @@ namespace Pharmacy
         private void MnItemCustomers_Click(object sender, EventArgs e)
         {
             FrmCustomers frm = new FrmCustomers();
-            frm.Show();
+            frm.ShowDialog();
+        }
+
+        void login(object sender)
+        {
+            MnManagement.Visible = true;
+            MnItemLog.Text = "Log out";
         }
 
         private void MnItemLog_Click(object sender, EventArgs e)
         {
-            FrmLogin frm = new FrmLogin();
-            frm.ShowDialog();
+            if (Settings.accLogin == null)
+            {
+                FrmLogin frm = new FrmLogin();
+                frm.OnClickSubmit += new FrmLogin.LoginHandler(login);
+                frm.ShowDialog();
+            }
+            else
+            {
+                FrmMain_Load(sender, e);
+            }
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            Settings.accLogin = null;
+            MnItemLog.Text = "Log in";
             MnManagement.Visible = false;
+        }
+
+        private void MnItemAccounts_Click(object sender, EventArgs e)
+        {
+            FrmAccounts frm = new FrmAccounts();
+            frm.ShowDialog();
         }
     }
 }
