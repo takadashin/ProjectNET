@@ -1,4 +1,5 @@
 ﻿using Pharmacy.Properties;
+using Pharmacy.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,10 @@ namespace Pharmacy
         {
             MnManagement.Visible = true;
             MnItemLog.Text = "Log out";
+            if(Settings.accLogin.Type.Trim() == Constants.type[1])
+                MnItemAccounts.Visible = true;
+            else
+                MnItemAccounts.Visible = false;
         }
 
         private void MnItemLog_Click(object sender, EventArgs e)
