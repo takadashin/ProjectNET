@@ -48,5 +48,24 @@ namespace Pharmacy.Utils
         public const string DRUG_REC = "Recommended";
         public const string DRUG_DESC = "Description";
 
+        //Invoices
+        public const string INV_TB = "Invoices";
+        public const string INV_ID = "In_ID";
+        public const string INV_CUS = "CustomerID";
+        public const string INV_DATE = "IN_CreateDate";
+        public const string INV_DES = "IN_Description";
+        public const string INV_TOTAL = "IN_Total";
+        public const string INV_DOC = "DoctorName";
+        public const string INV_DOCDES = "IN_DoctorDes";
+        public const string INV_CREARTEBY = "CreatedBy";
+
+        //Invoices Items
+        public const string INIT_TB = "InvoicesItems";
+        public const string INIT_INID = "In_ID";
+        public const string INIT_ITEM = "Item#";
+        public const string INIT_DRUG = "Drug_ID";
+        public const string INIT_QTY = "QUANTITY";
+        public const string INIT_PAID = "PAIDEACH";
+
     }
 }

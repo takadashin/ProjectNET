@@ -70,10 +70,14 @@
     <Compile Include="DAO\BaseDao.cs" />
     <Compile Include="DAO\CustomerDao.cs" />
     <Compile Include="DAO\DrugDao.cs" />
+    <Compile Include="DAO\InvoiceDao.cs" />
+    <Compile Include="DAO\InvoiceItemsDao.cs" />
     <Compile Include="Domain\Accounts.cs" />
     <Compile Include="Domain\Customers.cs" />
     <Compile Include="Domain\DomainBasic.cs" />
     <Compile Include="Domain\Drugs.cs" />
+    <Compile Include="Domain\InvoiceItems.cs" />
+    <Compile Include="Domain\Invoices.cs" />
     <Compile Include="FrmAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +119,7 @@
     <Compile Include="Service\BaseService.cs" />
     <Compile Include="Service\CustomerService.cs" />
     <Compile Include="Service\DrugService.cs" />
+    <Compile Include="Service\InvoiceService.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\Criterion.cs" />

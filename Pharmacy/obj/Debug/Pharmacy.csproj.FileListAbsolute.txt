@@ -51,3 +51,17 @@ D:\svntest\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmAccounts.resources
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe.config
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.exe
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.pdb
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csprojResolveAssemblyReference.cache
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmAccounts.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmCustomers.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmDrugs.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmLogin.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmMain.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.mdf
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy_log.ldf
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.pdb
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\EntityFramework.dll
+C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\EntityFramework.xml
