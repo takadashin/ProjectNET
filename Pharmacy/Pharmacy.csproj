@@ -119,6 +119,7 @@
     <Compile Include="Service\BaseService.cs" />
     <Compile Include="Service\CustomerService.cs" />
     <Compile Include="Service\DrugService.cs" />
+    <Compile Include="Service\InvoiceItemServices.cs" />
     <Compile Include="Service\InvoiceService.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Utils\Constants.cs" />
