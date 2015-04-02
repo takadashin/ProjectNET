@@ -124,20 +124,8 @@ namespace Pharmacy
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            List<Criterion> criterions = new List<Criterion>();
-            if (!Utils.CommonMethod.checkNotInt(txtSearch.Text, null, null))
-            {
-                criterions.Add(new Criterion(Constants.ID, txtSearch.Text, "or"));
-                criterions.Add(new Criterion(Constants.CUST_BIRTH, txtSearch.Text, "or"));
-                criterions.Add(new Criterion(Constants.CUST_CREATEDBY, txtSearch.Text, "or"));
-                criterions.Add(new Criterion(Constants.CUST_MODIFIEDBY, txtSearch.Text, "or"));
-            }
-            criterions.Add(new Criterion(Constants.CUST_NAME,txtSearch.Text,"or"));
-            criterions.Add(new Criterion(Constants.CUST_GENDER, txtSearch.Text, "or"));
-            criterions.Add(new Criterion(Constants.CUST_ADD, txtSearch.Text, "or"));
-            criterions.Add(new Criterion(Constants.CUST_INS, txtSearch.Text, "or"));
-            criterions.Add(new Criterion(Constants.CUST_ALLERGY, txtSearch.Text));
-            DataSet ds = custService.dsGetByCriterion(criterions, Constants.ID, true);
+
+            DataSet ds = custService.search(txtSearch.Text);
             dgvCustomers.DataSource = ds.Tables[0];
         }
 
