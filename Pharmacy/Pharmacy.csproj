@@ -108,6 +108,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoicesInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoicesInput.Designer.cs">
+      <DependentUpon>InvoicesInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="PharmacyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicesInput.resx">
+      <DependentUpon>InvoicesInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -178,6 +187,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Images\searchicon.png" />
     <Content Include="Pharmacy.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
