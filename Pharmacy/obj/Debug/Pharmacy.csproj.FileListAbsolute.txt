@@ -65,3 +65,20 @@ C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\Pharmacy.pdb
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\EntityFramework.dll
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\bin\Debug\EntityFramework.xml
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe.config
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.exe
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.pdb
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\Pharmacy.mdf
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\Pharmacy_log.ldf
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\Pharmacy.pdb
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\EntityFramework.dll
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\bin\Debug\EntityFramework.xml
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csprojResolveAssemblyReference.cache
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmAccounts.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmCustomers.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmDrugs.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmLogin.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmMain.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache

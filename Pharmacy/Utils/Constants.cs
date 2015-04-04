@@ -30,16 +30,15 @@ namespace Pharmacy.Utils
         public const string ACC_ADD = "Address";
         public const string ACC_PHONE = "PhoneNum";
         public const string ACC_INS = "Insurance";
-        public const string ACC_TYPE = "Type";   
-  
+        public const string ACC_TYPE = "Type";     
         //Drug
         public const string DRUG_TB = "DRUGS";
         public const string DRUG_NAME = "Name";
         public const string DRUG_SKU = "SKU";
         public const string DRUG_FORMAT = "Format";
         public const string DRUG_AMOUNT = "Amount";
-        public const string DRUG_TYPEOFAMOUNT = "Type of Amount";
-        public const string DRUG_MADEIN = "Made In";
+        public const string DRUG_TYPEOFAMOUNT = "Type_of_Amount";
+        public const string DRUG_MADEIN = "Made_In";
         public const string DRUG_PRICES = "Prices";
         public const string DRUG_DIS = "Discount";
         public const string DRUG_GENDER = "Gender";
@@ -47,7 +46,8 @@ namespace Pharmacy.Utils
         public const string DRUG_CAUTIONS = "Cautions";
         public const string DRUG_REC = "Recommended";
         public const string DRUG_DESC = "Description";
-
+        public const string DRUG_FEATURE = "Feature";
+        public const string DRUG_INVENTORY = "Inventory";
         //Invoices
         public const string INV_TB = "Invoices";
         public const string INV_ID = "In_ID";

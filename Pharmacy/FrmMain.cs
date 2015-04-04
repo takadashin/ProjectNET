@@ -66,5 +66,11 @@ namespace Pharmacy
             FrmAccounts frm = new FrmAccounts();
             frm.ShowDialog();
         }
+
+        private void MnItemDrugs_Click(object sender, EventArgs e)
+        {
+            FrmDrugs frm_drug = new FrmDrugs(Settings.accLogin.Type.Trim());
+            frm_drug.ShowDialog();
+        }
     }
 }

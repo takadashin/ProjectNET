@@ -124,7 +124,6 @@ namespace Pharmacy
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
             DataSet ds = custService.search(txtSearch.Text);
             dgvCustomers.DataSource = ds.Tables[0];
         }
