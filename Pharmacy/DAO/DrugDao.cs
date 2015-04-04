@@ -35,13 +35,17 @@ namespace Pharmacy.DAO
             drug.Amount = Int32.Parse(dr[Constants.DRUG_AMOUNT].ToString());
             drug.TypeOfAmount = dr[Constants.DRUG_TYPEOFAMOUNT].ToString();
             drug.MadeIn = dr[Constants.DRUG_MADEIN].ToString();
-            drug.Prices = double.Parse(dr[Constants.DRUG_PRICES].ToString());
-            drug.Discount = double.Parse(dr[Constants.DRUG_DIS].ToString());
+            if (dr[Constants.DRUG_PRICES].ToString() != "")
+                drug.Prices = float.Parse(dr[Constants.DRUG_PRICES].ToString());
+            if (dr[Constants.DRUG_DIS].ToString() != "")
+                drug.Discount = float.Parse(dr[Constants.DRUG_DIS].ToString());
             drug.Gender = dr[Constants.DRUG_GENDER].ToString();
             drug.Ingredients = dr[Constants.DRUG_INGRE].ToString();
             drug.Cautions = dr[Constants.DRUG_CAUTIONS].ToString();
             drug.Recommended = dr[Constants.DRUG_REC].ToString();
             drug.Description = dr[Constants.DRUG_DESC].ToString();
+            drug.Feature = dr[Constants.DRUG_FEATURE].ToString();
+            drug.Inventory = Int32.Parse(dr[Constants.DRUG_INVENTORY].ToString());
             return drug;
         }
 
@@ -49,20 +53,21 @@ namespace Pharmacy.DAO
         {
             List<Criterion> data = new List<Criterion>();
             id = drug.Id;
-            data.Add(new Criterion(Constants.CUST_NAME, drug.Name));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.SKU));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.Format));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.Amount));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.TypeOfAmount));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.MadeIn));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.Prices));
-            data.Add(new Criterion(Constants.CUST_NAME, drug.Discount));
-            data.Add(new Criterion(Constants.CUST_GENDER, drug.Gender));
-            data.Add(new Criterion(Constants.CUST_ADD, drug.Ingredients));
-            data.Add(new Criterion(Constants.CUST_BIRTH, drug.Cautions));
-            data.Add(new Criterion(Constants.CUST_INS, drug.Recommended));
-            data.Add(new Criterion(Constants.CUST_ALLERGY, drug.Description));
-
+            data.Add(new Criterion(Constants.DRUG_NAME, drug.Name));
+            data.Add(new Criterion(Constants.DRUG_SKU, drug.SKU));
+            data.Add(new Criterion(Constants.DRUG_FORMAT, drug.Format));
+            data.Add(new Criterion(Constants.DRUG_AMOUNT, drug.Amount));
+            data.Add(new Criterion(Constants.DRUG_TYPEOFAMOUNT, drug.TypeOfAmount));
+            data.Add(new Criterion(Constants.DRUG_MADEIN, drug.MadeIn));
+            data.Add(new Criterion(Constants.DRUG_PRICES, drug.Prices));
+            data.Add(new Criterion(Constants.DRUG_DIS, drug.Discount));
+            data.Add(new Criterion(Constants.DRUG_GENDER, drug.Gender));
+            data.Add(new Criterion(Constants.DRUG_INGRE, drug.Ingredients));
+            data.Add(new Criterion(Constants.DRUG_CAUTIONS, drug.Cautions));
+            data.Add(new Criterion(Constants.DRUG_REC, drug.Recommended));
+            data.Add(new Criterion(Constants.DRUG_DESC, drug.Description));
+            data.Add(new Criterion(Constants.DRUG_FEATURE, drug.Feature));
+            data.Add(new Criterion(Constants.DRUG_INVENTORY, drug.Inventory));
             return data;
         }
     }

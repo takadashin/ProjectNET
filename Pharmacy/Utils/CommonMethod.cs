@@ -33,6 +33,20 @@ namespace Pharmacy.Utils
             return false;
         }
 
+        public static bool checkNotFloat(string text, string errorMsg, string caption)
+        {
+            float number;
+            if (text.Trim() != "" && !float.TryParse(text.Trim(), out number))
+            {
+                if (errorMsg != null)
+                    MessageBox.Show(errorMsg, caption);
+                return true;
+            }
+            return false;
+        }
+
+
+
         public static bool checkNotDateTime(string text, string errorMsg, string caption)
         {
             DateTime date;

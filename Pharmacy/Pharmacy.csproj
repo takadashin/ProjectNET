@@ -108,6 +108,18 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceSearch\SearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceSearch\SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceSearch\SearchDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceSearch\SearchDrug.Designer.cs">
+      <DependentUpon>SearchDrug.cs</DependentUpon>
+    </Compile>
     <Compile Include="InvoicesInput.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceSearch\SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceSearch\SearchDrug.resx">
+      <DependentUpon>SearchDrug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoicesInput.resx">
       <DependentUpon>InvoicesInput.cs</DependentUpon>

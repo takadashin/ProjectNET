@@ -9,18 +9,20 @@ namespace Pharmacy.Domain
     class Drugs : DomainBasic
     {
         private string name;
-        private string sku;
+        private string sku;        
         private string format;
         private int amount;
         private string typeOfAmount;
         private string madein;
-        private double prices;
-        private double discount;
+        private float prices;
+        private float discount;
         private string gender;
         private string ingredients;
         private string cautions;
         private string recommended;
         private string description;
+        private string feature;
+        private int inventory;
 
         public string Name
         {
@@ -43,7 +45,7 @@ namespace Pharmacy.Domain
             {
                 sku = value;
             }
-        }
+        }        
         public string Format
         {
             get
@@ -89,7 +91,7 @@ namespace Pharmacy.Domain
             }
         }
 
-        public double Prices
+        public float Prices
         {
             get
             {
@@ -100,7 +102,7 @@ namespace Pharmacy.Domain
                 prices = value;
             }
         }
-        public double Discount
+        public float Discount
         {
             get
             {
@@ -168,6 +170,28 @@ namespace Pharmacy.Domain
             }
         }
 
+        public string Feature
+        {
+            get
+            {
+                return feature;
+            }
+            set
+            {
+                feature = value;
+            }
+        }
 
+        public int Inventory
+        {
+            get
+            {
+                return inventory;
+            }
+            set
+            {
+                inventory = value;
+            }
+        }
     }
 }

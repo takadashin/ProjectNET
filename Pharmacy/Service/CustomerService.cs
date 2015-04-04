@@ -35,6 +35,7 @@ namespace Pharmacy.Service
             criterions.Add(new Criterion(Constants.CUST_ALLERGY, searchText));
             return dsGetByCriterion(criterions, Constants.ID, true);
         }
+        
 
     }
 }

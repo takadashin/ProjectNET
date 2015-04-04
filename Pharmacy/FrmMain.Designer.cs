@@ -97,6 +97,7 @@
             this.MnItemDrugs.Name = "MnItemDrugs";
             this.MnItemDrugs.Size = new System.Drawing.Size(152, 22);
             this.MnItemDrugs.Text = "Drugs";
+            this.MnItemDrugs.Click += new System.EventHandler(this.MnItemDrugs_Click);
             // 
             // MnItemCustomers
             // 
