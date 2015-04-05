@@ -28,49 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_ok = new System.Windows.Forms.Button();
+            this.dtv_display = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tb_cus = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_display)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
+            // bt_cancel
             // 
-            this.button3.Location = new System.Drawing.Point(462, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt_cancel.Location = new System.Drawing.Point(462, 212);
+            this.bt_cancel.Name = "bt_cancel";
+            this.bt_cancel.Size = new System.Drawing.Size(75, 23);
+            this.bt_cancel.TabIndex = 11;
+            this.bt_cancel.Text = "Cancel";
+            this.bt_cancel.UseVisualStyleBackColor = true;
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
-            // button2
+            // bt_ok
             // 
-            this.button2.Location = new System.Drawing.Point(362, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Ok";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_ok.Location = new System.Drawing.Point(362, 212);
+            this.bt_ok.Name = "bt_ok";
+            this.bt_ok.Size = new System.Drawing.Size(75, 23);
+            this.bt_ok.TabIndex = 10;
+            this.bt_ok.Text = "Ok";
+            this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
-            // dataGridView1
+            // dtv_display
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(531, 160);
-            this.dataGridView1.TabIndex = 9;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(462, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dtv_display.AllowUserToAddRows = false;
+            this.dtv_display.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_display.Location = new System.Drawing.Point(12, 34);
+            this.dtv_display.Name = "dtv_display";
+            this.dtv_display.ReadOnly = true;
+            this.dtv_display.Size = new System.Drawing.Size(531, 160);
+            this.dtv_display.TabIndex = 9;
             // 
             // label1
             // 
@@ -81,27 +75,28 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Customer";
             // 
-            // textBox1
+            // tb_cus
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(387, 20);
-            this.textBox1.TabIndex = 6;
+            this.tb_cus.Location = new System.Drawing.Point(69, 8);
+            this.tb_cus.Name = "tb_cus";
+            this.tb_cus.Size = new System.Drawing.Size(474, 20);
+            this.tb_cus.TabIndex = 6;
+            this.tb_cus.TextChanged += new System.EventHandler(this.tb_cus_TextChanged);
             // 
             // SearchCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 244);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_cancel);
+            this.Controls.Add(this.bt_ok);
+            this.Controls.Add(this.dtv_display);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_cus);
             this.Name = "SearchCustomer";
             this.Text = "SearchCustomer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.SearchCustomer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_display)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,11 +104,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_cancel;
+        private System.Windows.Forms.Button bt_ok;
+        private System.Windows.Forms.DataGridView dtv_display;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_cus;
     }
 }

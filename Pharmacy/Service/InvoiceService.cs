@@ -51,17 +51,17 @@ namespace Pharmacy.Service
         }
         public string getcusidfromsearch(string name)
         {
-            DataSet ds = dao.getBySQL("select * from " + Constants.CUST_TB + " where " + Constants.CUST_NAME + " LIKE '%" + name + "%'", Constants.CUST_NAME, true);
+            DataSet ds = dao.getBySQL("select * from " + Constants.CUST_TB + " where " + Constants.CUST_NAME + " LIKE '%" + name.Replace("'","''") + "%'", Constants.CUST_NAME, true);
             if (ds.Tables[0].Rows.Count > 0)
-                return ds.Tables[0].Rows[0][0].ToString();
+                return ds.Tables[0].Rows[0][0].ToString().Trim();
             else
                 return String.Empty;
         }
         public string getdrugidfromsearch(string name)
         {
-            DataSet ds = dao.getBySQL("select * from " + Constants.DRUG_TB + " where " + Constants.DRUG_NAME + " LIKE '%" + name + "%'", Constants.CUST_NAME, true);
+            DataSet ds = dao.getBySQL("select * from " + Constants.DRUG_TB + " where " + Constants.DRUG_NAME + " LIKE '%" + name.Replace("'", "''") + "%'", Constants.CUST_NAME, true);
             if (ds.Tables[0].Rows.Count > 0)
-                return ds.Tables[0].Rows[0][0].ToString();
+                return ds.Tables[0].Rows[0][0].ToString().Trim();
             else
                 return String.Empty;
         }

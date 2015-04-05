@@ -45,6 +45,7 @@ namespace Pharmacy.DAO
         {
             List<Criterion> data = new List<Criterion>();
             id = invoices.In_ID;
+            data.Add(new Criterion(Constants.INV_ID,invoices.In_ID));
             data.Add(new Criterion(Constants.INV_CUS, invoices.CustomerID.Id));
             data.Add(new Criterion(Constants.INV_CREARTEBY, invoices.CreateBy.Id));
             data.Add(new Criterion(Constants.INV_DATE, invoices.CreateDate));

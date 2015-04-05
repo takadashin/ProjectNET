@@ -72,5 +72,11 @@ namespace Pharmacy
             FrmDrugs frm_drug = new FrmDrugs(Settings.accLogin.Type.Trim());
             frm_drug.ShowDialog();
         }
+
+        private void MnItemInvoive_Click(object sender, EventArgs e)
+        {
+            InvoicesInput frm_invoices = new InvoicesInput();
+            frm_invoices.ShowDialog();
+        }
     }
 }

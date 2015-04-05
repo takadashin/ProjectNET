@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_createdate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_cus = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -94,13 +94,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Create Date";
             // 
-            // dateTimePicker1
+            // dtp_createdate
             // 
-            this.dateTimePicker1.CustomFormat = "MM-DD-YYYY";
-            this.dateTimePicker1.Location = new System.Drawing.Point(259, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(140, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dtp_createdate.CustomFormat = "MM-DD-YYYY";
+            this.dtp_createdate.Location = new System.Drawing.Point(259, 19);
+            this.dtp_createdate.Name = "dtp_createdate";
+            this.dtp_createdate.Size = new System.Drawing.Size(140, 20);
+            this.dtp_createdate.TabIndex = 3;
             // 
             // label3
             // 
@@ -117,7 +117,6 @@
             this.tb_cus.Name = "tb_cus";
             this.tb_cus.Size = new System.Drawing.Size(293, 20);
             this.tb_cus.TabIndex = 5;
-            this.tb_cus.TextChanged += new System.EventHandler(this.tb_cus_TextChanged);
             this.tb_cus.Leave += new System.EventHandler(this.tb_cus_Leave);
             // 
             // label4
@@ -222,6 +221,7 @@
             this.bt_searchdrug.Size = new System.Drawing.Size(20, 20);
             this.bt_searchdrug.TabIndex = 12;
             this.bt_searchdrug.UseVisualStyleBackColor = true;
+            this.bt_searchdrug.Click += new System.EventHandler(this.bt_searchdrug_Click);
             // 
             // tb_paideach
             // 
@@ -263,7 +263,6 @@
             this.tb_drug.Name = "tb_drug";
             this.tb_drug.Size = new System.Drawing.Size(293, 20);
             this.tb_drug.TabIndex = 7;
-            this.tb_drug.TextChanged += new System.EventHandler(this.tb_drug_TextChanged);
             this.tb_drug.Enter += new System.EventHandler(this.tb_drug_Enter);
             this.tb_drug.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_drug_KeyDown);
             this.tb_drug.Leave += new System.EventHandler(this.tb_drug_Leave);
@@ -279,6 +278,7 @@
             // 
             // dtv_drug
             // 
+            this.dtv_drug.AllowUserToAddRows = false;
             this.dtv_drug.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtv_drug.Location = new System.Drawing.Point(7, 85);
             this.dtv_drug.Name = "dtv_drug";
@@ -324,7 +324,7 @@
             // lb_subtotal
             // 
             this.lb_subtotal.AutoSize = true;
-            this.lb_subtotal.Location = new System.Drawing.Point(649, 413);
+            this.lb_subtotal.Location = new System.Drawing.Point(16, 408);
             this.lb_subtotal.Name = "lb_subtotal";
             this.lb_subtotal.Size = new System.Drawing.Size(59, 13);
             this.lb_subtotal.TabIndex = 16;
@@ -333,7 +333,7 @@
             // lb_total
             // 
             this.lb_total.AutoSize = true;
-            this.lb_total.Location = new System.Drawing.Point(649, 436);
+            this.lb_total.Location = new System.Drawing.Point(16, 431);
             this.lb_total.Name = "lb_total";
             this.lb_total.Size = new System.Drawing.Size(31, 13);
             this.lb_total.TabIndex = 17;
@@ -347,6 +347,7 @@
             this.bt_save.TabIndex = 18;
             this.bt_save.Text = "Save";
             this.bt_save.UseVisualStyleBackColor = true;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // bt_cancel
             // 
@@ -365,6 +366,7 @@
             this.bt_clear.TabIndex = 20;
             this.bt_clear.Text = "Clear";
             this.bt_clear.UseVisualStyleBackColor = true;
+            this.bt_clear.Click += new System.EventHandler(this.bt_clear_Click);
             // 
             // bt_searchcus
             // 
@@ -407,7 +409,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_cus);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp_createdate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label1);
@@ -430,7 +432,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_createdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_cus;
         private System.Windows.Forms.Button bt_searchcus;

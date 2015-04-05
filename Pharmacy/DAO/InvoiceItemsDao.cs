@@ -43,6 +43,7 @@ namespace Pharmacy.DAO
         {
             List<Criterion> data = new List<Criterion>();
             id = init.In_ID;
+            data.Add(new Criterion(Constants.INIT_INID, init.In_ID.In_ID));
             data.Add(new Criterion(Constants.INIT_DRUG, init.Drug_ID.Id));
             data.Add(new Criterion(Constants.INIT_ITEM, init.ItemNum));
             data.Add(new Criterion(Constants.INIT_PAID, init.PaidEach));

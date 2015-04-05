@@ -55,9 +55,9 @@ namespace Pharmacy.Utils
         public const string INV_DATE = "IN_CreateDate";
         public const string INV_DES = "IN_Description";
         public const string INV_TOTAL = "IN_Total";
-        public const string INV_DOC = "DoctorName";
+        public const string INV_DOC = "IN_DoctorName";
         public const string INV_DOCDES = "IN_DoctorDes";
-        public const string INV_CREARTEBY = "CreatedBy";
+        public const string INV_CREARTEBY = "CreateBy";
 
         //Invoices Items
         public const string INIT_TB = "InvoicesItems";
