@@ -86,3 +86,8 @@ C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.Invoi
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchDrug.resources
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.FrmInvoiceManager.resources
 C:\Users\khaiv_000\Desktop\NetProject\Pharmacy\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchInvoice.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmInvoiceManager.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchCustomer.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchDrug.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchInvoice.resources
+C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoicesInput.resources
