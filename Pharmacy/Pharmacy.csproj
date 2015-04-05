@@ -96,6 +96,12 @@
     <Compile Include="FrmDrugs.Designer.cs">
       <DependentUpon>FrmDrugs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInvoiceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceManager.Designer.cs">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="InvoiceSearch\SearchDrug.Designer.cs">
       <DependentUpon>SearchDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceSearch\SearchInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceSearch\SearchInvoice.Designer.cs">
+      <DependentUpon>SearchInvoice.cs</DependentUpon>
     </Compile>
     <Compile Include="InvoicesInput.cs">
       <SubType>Form</SubType>
@@ -152,6 +164,9 @@
     <EmbeddedResource Include="FrmDrugs.resx">
       <DependentUpon>FrmDrugs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmInvoiceManager.resx">
+      <DependentUpon>FrmInvoiceManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceSearch\SearchDrug.resx">
       <DependentUpon>SearchDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceSearch\SearchInvoice.resx">
+      <DependentUpon>SearchInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoicesInput.resx">
       <DependentUpon>InvoicesInput.cs</DependentUpon>
@@ -206,6 +224,10 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="Images\searchicon.png" />
+    <None Include="Images\arrow-left-16.png" />
+    <None Include="Images\arrow-right-16.png" />
+    <None Include="Images\Extra_Sugar-16.png" />
+    <None Include="Images\010_x-16.png" />
     <Content Include="Pharmacy.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

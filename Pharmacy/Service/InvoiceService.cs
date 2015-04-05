@@ -65,5 +65,25 @@ namespace Pharmacy.Service
             else
                 return String.Empty;
         }
+        public DataSet search(string searchText)
+        {
+            List<Criterion> criterions = new List<Criterion>();
+            if (!Utils.CommonMethod.checkNotInt(searchText, null, null))
+            {
+               
+                criterions.Add(new Criterion(Constants.INV_CREARTEBY, searchText, "or"));
+                criterions.Add(new Criterion(Constants.INV_CUS, searchText, "or"));
+            }
+            criterions.Add(new Criterion(Constants.INV_ID, searchText, "or"));
+            criterions.Add(new Criterion(Constants.INV_DES, searchText, "or"));
+            criterions.Add(new Criterion(Constants.INV_DOC, searchText, "or"));
+            criterions.Add(new Criterion(Constants.INV_DOCDES, searchText));
+            return dsGetByCriterion(criterions, Constants.INV_ID, true);
+        }
+
+        public DataSet getdisplaysearch()
+        {
+            return dao.getBySQL("select " + Constants.INV_TB + ".*," + Constants.CUST_TB + "." + Constants.CUST_NAME + "," + Constants.ACC_TB + "." + Constants.ACC_USERNAME + " from " + Constants.INV_TB + "," + Constants.CUST_TB + "," + Constants.ACC_TB + " WHERE " + Constants.INV_TB + "." + Constants.INV_CUS + " = " + Constants.CUST_TB + "." + Constants.ID + " AND " + Constants.INV_TB + "." + Constants.INV_CREARTEBY + " = " + Constants.ACC_TB + "." + Constants.ID, Constants.INV_ID, true);
+        }
     }
 }
