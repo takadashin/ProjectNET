@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_refund = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tb_des = new System.Windows.Forms.TextBox();
             this.tb_docdes = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.bt_search = new System.Windows.Forms.Button();
             this.bt_next = new System.Windows.Forms.Button();
             this.bt_pre = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cb_refund = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_init)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +84,24 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Invoices Information";
+            // 
+            // cb_refund
+            // 
+            this.cb_refund.AutoSize = true;
+            this.cb_refund.Location = new System.Drawing.Point(54, 190);
+            this.cb_refund.Name = "cb_refund";
+            this.cb_refund.Size = new System.Drawing.Size(15, 14);
+            this.cb_refund.TabIndex = 18;
+            this.cb_refund.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Refund";
             // 
             // tb_des
             // 
@@ -257,6 +275,7 @@
             this.bt_delete.TabIndex = 6;
             this.bt_delete.Text = "Delete";
             this.bt_delete.UseVisualStyleBackColor = true;
+            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
             // 
             // bt_exit
             // 
@@ -266,6 +285,7 @@
             this.bt_exit.Size = new System.Drawing.Size(75, 50);
             this.bt_exit.TabIndex = 7;
             this.bt_exit.UseVisualStyleBackColor = true;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // bt_search
             // 
@@ -296,24 +316,6 @@
             this.bt_pre.TabIndex = 0;
             this.bt_pre.UseVisualStyleBackColor = true;
             this.bt_pre.Click += new System.EventHandler(this.bt_pre_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 190);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Refund";
-            // 
-            // cb_refund
-            // 
-            this.cb_refund.AutoSize = true;
-            this.cb_refund.Location = new System.Drawing.Point(54, 190);
-            this.cb_refund.Name = "cb_refund";
-            this.cb_refund.Size = new System.Drawing.Size(15, 14);
-            this.cb_refund.TabIndex = 18;
-            this.cb_refund.UseVisualStyleBackColor = false;
             // 
             // FrmInvoiceManager
             // 
