@@ -23,6 +23,8 @@ namespace Pharmacy
         InvoiceItemServices initser = new InvoiceItemServices();
         public FrmInvoiceManager()
         {
+            AccountService accService = new AccountService();
+            Settings.accLogin = accService.getById(2);
             InitializeComponent();
         }
         int index;
@@ -41,15 +43,15 @@ namespace Pharmacy
         {
             if (dbmain.Rows.Count > 0)
             {
-                lb_cus.Text = dbmain.Rows[newindex-1][Constants.CUST_NAME].ToString();
-                lb_ID.Text = dbmain.Rows[newindex-1][Constants.INV_ID].ToString();
+                lb_cus.Text = dbmain.Rows[newindex - 1][Constants.CUST_NAME].ToString();
+                lb_ID.Text = dbmain.Rows[newindex - 1][Constants.INV_ID].ToString();
                 lb_user.Text = dbmain.Rows[newindex - 1][Constants.ACC_USERNAME].ToString();
                 lb_total.Text = "$" + dbmain.Rows[newindex - 1][Constants.INV_TOTAL].ToString();
                 lb_docname.Text = dbmain.Rows[newindex - 1][Constants.INV_DOC].ToString();
                 lb_createdate.Text = dbmain.Rows[newindex - 1][Constants.INV_DATE].ToString();
                 tb_des.Text = dbmain.Rows[newindex - 1][Constants.INV_DES].ToString();
                 tb_docdes.Text = dbmain.Rows[newindex - 1][Constants.INV_DOCDES].ToString();
-                bool check = Boolean.Parse( dbmain.Rows[newindex - 1][Constants.INV_REFUND].ToString());
+                bool check = Boolean.Parse(dbmain.Rows[newindex - 1][Constants.INV_REFUND].ToString());
                 if (check)
                     cb_refund.Checked = true;
                 else
@@ -86,7 +88,7 @@ namespace Pharmacy
         }
         public void searchinvoicevalue(string value)
         {
-            int count =1;
+            int count = 1;
             foreach (DataRow rw in dbmain.Rows)
             {
                 if (rw[Constants.INIT_INID].ToString().Trim().Equals(value.Trim()))
@@ -100,7 +102,7 @@ namespace Pharmacy
         private void bt_refund_Click(object sender, EventArgs e)
         {
             List<Criterion> data = new List<Criterion>();
-            Criterion refundcol = new Criterion(Constants.INV_REFUND,true);
+            Criterion refundcol = new Criterion(Constants.INV_REFUND, true);
 
             data.Add(refundcol);
             bool i = invser.updatedBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), data);
@@ -112,12 +114,12 @@ namespace Pharmacy
 
         private void bt_delete_Click(object sender, EventArgs e)
         {
-            if(Settings.accLogin.Type == "Admin")
-            if (initser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
-            if (invser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(),true))
-            {
-                init();
-            }
+            if (Settings.accLogin.Type == "Admin")
+                if (initser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
+                    if (invser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
+                    {
+                        init();
+                    }
         }
 
         private void bt_exit_Click(object sender, EventArgs e)

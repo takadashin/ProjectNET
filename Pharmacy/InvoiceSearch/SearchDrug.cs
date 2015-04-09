@@ -39,6 +39,10 @@ namespace Pharmacy.InvoiceSearch
         {
             DataSet ds = custService.search(tb_drug.Text);
             dtv_display.DataSource = ds.Tables[0];
+            if (dtv_display.RowCount > 0)
+            {
+                dtv_display.Rows[0].Selected = true;
+            }
         }
 
         private void bt_cancel_Click(object sender, EventArgs e)

@@ -30,6 +30,10 @@ namespace Pharmacy.InvoiceSearch
         {
             DataSet ds = invService.search(tb_invoice.Text);
             dtv_display.DataSource = ds.Tables[0];
+            if (dtv_display.RowCount > 0)
+            {
+                dtv_display.Rows[0].Selected = true;
+            }
         }
 
         private void bt_ok_Click(object sender, EventArgs e)

@@ -30,6 +30,10 @@ namespace Pharmacy.InvoiceSearch
         {
             DataSet ds = custService.search(tb_cus.Text);
             dtv_display.DataSource = ds.Tables[0];
+            if (dtv_display.RowCount > 0)
+            {
+                dtv_display.Rows[0].Selected = true;
+            }
         }
 
         private void SearchCustomer_Load(object sender, EventArgs e)
@@ -41,6 +45,7 @@ namespace Pharmacy.InvoiceSearch
         {
             if (dtv_display.RowCount > 0)
             {
+               
                 this.inip.searchcusvalue(dtv_display.SelectedRows[0].Cells[Constants.CUST_NAME].Value.ToString().Trim(), dtv_display.SelectedRows[0].Cells[Constants.ID].Value.ToString().Trim());
                this.Close();
             }

@@ -91,3 +91,24 @@ C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.Invo
 C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchDrug.resources
 C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchInvoice.resources
 C:\Users\Hellen\Desktop\Project .NET\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoicesInput.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe.config
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.exe
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.pdb
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\Pharmacy.mdf
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\Pharmacy_log.ldf
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\Pharmacy.pdb
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\EntityFramework.dll
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\bin\Debug\EntityFramework.xml
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmAccounts.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmCustomers.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmDrugs.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmInvoiceManager.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmLogin.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.FrmMain.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchCustomer.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchDrug.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.SearchInvoice.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoicesInput.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
