@@ -76,8 +76,15 @@ namespace Pharmacy.Domain
             set { docdes = value; }
         }
 
-        
 
+        private bool refund;
+
+        public bool Refund
+        {
+            get { return refund; }
+            set { refund = value; }
+        }
+        
         
         
         
