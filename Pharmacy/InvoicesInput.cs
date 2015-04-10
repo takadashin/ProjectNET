@@ -265,6 +265,11 @@ namespace Pharmacy
             { check = false; }
                 return check;
         }
+
+        private void bt_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
      
     }
 }

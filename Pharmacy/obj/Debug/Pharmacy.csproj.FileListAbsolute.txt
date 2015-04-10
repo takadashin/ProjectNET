@@ -115,8 +115,6 @@ C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharm
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe.config
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.exe
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.pdb
-C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.mdf
-C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy_log.ldf
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.exe
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.pdb
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\EntityFramework.dll
@@ -134,3 +132,5 @@ C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoiceSearch.
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.InvoicesInput.resources
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.Properties.Resources.resources
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
+C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.mdf
+C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy_log.ldf
