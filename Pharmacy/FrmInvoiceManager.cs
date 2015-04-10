@@ -101,16 +101,41 @@ namespace Pharmacy
 
         private void bt_refund_Click(object sender, EventArgs e)
         {
-            List<Criterion> data = new List<Criterion>();
-            Criterion refundcol = new Criterion(Constants.INV_REFUND, true);
+            if (cb_refund.Checked == false)
+            {
+                List<Criterion> data = new List<Criterion>();
+                Criterion refundcol = new Criterion(Constants.INV_REFUND, true);
 
-            data.Add(refundcol);
-            bool i = invser.updatedBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), data);
-            if (i)
-                MessageBox.Show("Update Successful");
+                data.Add(refundcol);
+                bool i = invser.updatedBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), data);
+                if (i)
+                {
+                    DataTable dbinit = new DataTable();
+                    dbinit = initser.dsGetBy(Constants.INIT_INID, dbmain.Rows[index - 1][Constants.INV_ID].ToString(), true).Tables[0];
+                    foreach (DataRow rw in dbinit.Rows)
+                    {
+                        DrugService drugsv = new DrugService();
+                        int itemmax = drugsv.getById(rw[Constants.INIT_DRUG].ToString().Trim()).Amount;
+                        List<Criterion> dataacc = new List<Criterion>();
+                        int valueitem = itemmax + int.Parse(rw[Constants.INIT_QTY].ToString().Trim());
+                        Criterion ammount = new Criterion(Constants.DRUG_AMOUNT, valueitem);
+                        dataacc.Add(ammount);
+                        bool ii = drugsv.updatedBy(Constants.ID, int.Parse(rw[Constants.INIT_DRUG].ToString().Trim()), dataacc);
+                        if (ii == false)
+                        {
+                            MessageBox.Show("Failed");
+                            return;
+                        }
+
+                    }
+                    MessageBox.Show("Update Successful");
+                }
+                else
+                    MessageBox.Show("Failed");
+                init();
+            }
             else
-                MessageBox.Show("Failed");
-            init();
+                MessageBox.Show("This invoices was refunded");
         }
 
         private void bt_delete_Click(object sender, EventArgs e)

@@ -61,7 +61,7 @@ namespace Pharmacy.Service
         {
             DataSet ds = dao.getBySQL("select * from " + Constants.DRUG_TB + " where " + Constants.DRUG_NAME + " LIKE '%" + name.Replace("'", "''") + "%'", Constants.CUST_NAME, true);
             if (ds.Tables[0].Rows.Count > 0)
-                return ds.Tables[0].Rows[0][0].ToString().Trim();
+                return ds.Tables[0].Rows[0][0].ToString().Trim() + "|" + ds.Tables[0].Rows[0][Constants.DRUG_AMOUNT].ToString().Trim();
             else
                 return String.Empty;
         }

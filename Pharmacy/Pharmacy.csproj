@@ -229,11 +229,11 @@
     <None Include="Images\Extra_Sugar-16.png" />
     <None Include="Images\010_x-16.png" />
     <Content Include="Pharmacy.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Pharmacy_log.ldf">
       <DependentUpon>Pharmacy.mdf</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

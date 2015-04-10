@@ -38,6 +38,7 @@ namespace Pharmacy.DAO
             invoices.Total = Double.Parse(dr[Constants.INV_TOTAL].ToString());
             invoices.DocName = dr[Constants.INV_DOC].ToString();
             invoices.DocDes = dr[Constants.INV_DES].ToString();
+            invoices.Refund = (bool) dr[Constants.INV_REFUND]; 
             return invoices;
         }
 
@@ -53,6 +54,7 @@ namespace Pharmacy.DAO
             data.Add(new Criterion(Constants.INV_TOTAL, invoices.Total));
             data.Add(new Criterion(Constants.INV_DOC, invoices.DocName));
             data.Add(new Criterion(Constants.INV_DOCDES, invoices.DocDes));
+            data.Add(new Criterion(Constants.INV_REFUND, invoices.Refund));
             return data;
         }
     }

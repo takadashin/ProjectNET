@@ -22,8 +22,6 @@ namespace Pharmacy
 
         public FrmCustomers()
         {
-            AccountService accService = new AccountService();
-            Settings.accLogin = accService.getById(2);
             InitializeComponent();
         }
 

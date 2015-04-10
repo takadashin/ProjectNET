@@ -64,6 +64,7 @@ namespace Pharmacy
         private void MnItemAccounts_Click(object sender, EventArgs e)
         {
             FrmAccounts frm = new FrmAccounts();
+          //  frm.MdiParent = this;
             frm.ShowDialog();
         }
 
