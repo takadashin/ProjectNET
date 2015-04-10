@@ -75,7 +75,18 @@ namespace Pharmacy
 
         private void MnItemInvoive_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void addInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             InvoicesInput frm_invoices = new InvoicesInput();
+            frm_invoices.ShowDialog();
+        }
+
+        private void manageInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInvoiceManager frm_invoices = new FrmInvoiceManager();
             frm_invoices.ShowDialog();
         }
     }

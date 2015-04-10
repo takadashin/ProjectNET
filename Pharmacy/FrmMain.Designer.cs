@@ -37,6 +37,8 @@
             this.MnItemDrugs = new System.Windows.Forms.ToolStripMenuItem();
             this.MnItemCustomers = new System.Windows.Forms.ToolStripMenuItem();
             this.MnItemInvoive = new System.Windows.Forms.ToolStripMenuItem();
+            this.addInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,10 +110,27 @@
             // 
             // MnItemInvoive
             // 
+            this.MnItemInvoive.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addInvoiceToolStripMenuItem,
+            this.manageInvoiceToolStripMenuItem});
             this.MnItemInvoive.Name = "MnItemInvoive";
             this.MnItemInvoive.Size = new System.Drawing.Size(152, 22);
-            this.MnItemInvoive.Text = "Invoive";
+            this.MnItemInvoive.Text = "Invoices";
             this.MnItemInvoive.Click += new System.EventHandler(this.MnItemInvoive_Click);
+            // 
+            // addInvoiceToolStripMenuItem
+            // 
+            this.addInvoiceToolStripMenuItem.Name = "addInvoiceToolStripMenuItem";
+            this.addInvoiceToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.addInvoiceToolStripMenuItem.Text = "Add Invoice";
+            this.addInvoiceToolStripMenuItem.Click += new System.EventHandler(this.addInvoiceToolStripMenuItem_Click);
+            // 
+            // manageInvoiceToolStripMenuItem
+            // 
+            this.manageInvoiceToolStripMenuItem.Name = "manageInvoiceToolStripMenuItem";
+            this.manageInvoiceToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.manageInvoiceToolStripMenuItem.Text = "Manage Invoice";
+            this.manageInvoiceToolStripMenuItem.Click += new System.EventHandler(this.manageInvoiceToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -144,6 +163,8 @@
         private System.Windows.Forms.ToolStripMenuItem MnItemDrugs;
         private System.Windows.Forms.ToolStripMenuItem MnItemCustomers;
         private System.Windows.Forms.ToolStripMenuItem MnItemInvoive;
+        private System.Windows.Forms.ToolStripMenuItem addInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageInvoiceToolStripMenuItem;
 
     }
 }

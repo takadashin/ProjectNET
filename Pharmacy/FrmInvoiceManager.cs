@@ -107,14 +107,14 @@ namespace Pharmacy
             data.Add(refundcol);
             bool i = invser.updatedBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), data);
             if (i)
-                MessageBox.Show("Ok");
+                MessageBox.Show("Update Successful");
             else
                 MessageBox.Show("Failed");
         }
 
         private void bt_delete_Click(object sender, EventArgs e)
         {
-            if (Settings.accLogin.Type == "Admin")
+            if (Settings.accLogin.Type.Trim() == "Admin")
                 if (initser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
                     if (invser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
                     {
