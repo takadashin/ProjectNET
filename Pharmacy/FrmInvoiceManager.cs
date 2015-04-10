@@ -110,6 +110,7 @@ namespace Pharmacy
                 MessageBox.Show("Update Successful");
             else
                 MessageBox.Show("Failed");
+            init();
         }
 
         private void bt_delete_Click(object sender, EventArgs e)
