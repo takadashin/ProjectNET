@@ -64,19 +64,13 @@ namespace Pharmacy
         private void MnItemAccounts_Click(object sender, EventArgs e)
         {
             FrmAccounts frm = new FrmAccounts();
-          //  frm.MdiParent = this;
             frm.ShowDialog();
         }
 
         private void MnItemDrugs_Click(object sender, EventArgs e)
         {
-            FrmDrugs frm_drug = new FrmDrugs(Settings.accLogin.Type.Trim());
+            FrmDrugs frm_drug = new FrmDrugs();
             frm_drug.ShowDialog();
-        }
-
-        private void MnItemInvoive_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void addInvoiceToolStripMenuItem_Click(object sender, EventArgs e)

@@ -330,7 +330,9 @@
             this.Controls.Add(this.bt_search);
             this.Controls.Add(this.bt_next);
             this.Controls.Add(this.bt_pre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmInvoiceManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmInvoiceManager";
             this.Load += new System.EventHandler(this.FrmInvoiceManager_Load);
             this.groupBox1.ResumeLayout(false);

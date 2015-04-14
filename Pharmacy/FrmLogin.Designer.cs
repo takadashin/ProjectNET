@@ -51,7 +51,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(174, 20);
-            this.txtPassword.TabIndex = 18;
+            this.txtPassword.TabIndex = 1;
             // 
             // label4
             // 
@@ -68,14 +68,14 @@
             this.txtUserName.MaxLength = 50;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(174, 20);
-            this.txtUserName.TabIndex = 17;
+            this.txtUserName.TabIndex = 0;
             // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(80, 84);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 21;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -91,6 +91,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUserName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";

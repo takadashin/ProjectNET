@@ -20,11 +20,9 @@ namespace Pharmacy
     {
         DrugService drugService = new DrugService();
         Drugs drug = new Drugs();
-        string typeUser;
 
-        public FrmDrugs(string typeUser)
+        public FrmDrugs()
         {
-            this.typeUser = typeUser;
             InitializeComponent();
         }
 
@@ -41,14 +39,16 @@ namespace Pharmacy
 
         private void FrmDrugs_Load(object sender, EventArgs e)
         {
-            if (typeUser == Constants.type[1])
+            if (Settings.accLogin.Type.Trim() == Constants.type[1])
             {
-                groupBox1.Visible = true;
+                btnInsert.Enabled = true;         
                 btnDelete.Enabled = false;
                 btnSave.Enabled = false;
             }
             else {
-                groupBox1.Visible = false;
+                btnInsert.Enabled = false;
+                btnDelete.Enabled = false;
+                btnSave.Enabled = false;
             }
 
             DataSet ds = drugService.dsGetAll(Constants.ID, true);
@@ -68,10 +68,12 @@ namespace Pharmacy
             cbGender.SelectedIndex = 0;
             DataSet ds = drugService.dsGetAll(Constants.ID, true);
             dataGridView_DrugInfo.DataSource = ds.Tables[0];
-
-            btnInsert.Enabled = true;
-            btnDelete.Enabled = false;
-            btnSave.Enabled = false;
+            if (Settings.accLogin.Type.Trim() == Constants.type[1])
+            {
+                btnInsert.Enabled = true;
+                btnDelete.Enabled = false;
+                btnSave.Enabled = false;
+            }
         }
 
 
@@ -187,9 +189,12 @@ namespace Pharmacy
                 txbRecommended.Text = drug.Recommended;
                 txbDescription.Text = drug.Description;
                 txbFeature.Text = drug.Feature;
-                btnInsert.Enabled = false;
-                btnDelete.Enabled = true;
-                btnSave.Enabled = true;
+                if (Settings.accLogin.Type.Trim() == Constants.type[1])
+                {
+                    btnInsert.Enabled = false;
+                    btnDelete.Enabled = true;
+                    btnSave.Enabled = true;
+                }                
             }
         }
     }

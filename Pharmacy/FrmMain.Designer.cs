@@ -116,7 +116,6 @@
             this.MnItemInvoive.Name = "MnItemInvoive";
             this.MnItemInvoive.Size = new System.Drawing.Size(152, 22);
             this.MnItemInvoive.Text = "Invoices";
-            this.MnItemInvoive.Click += new System.EventHandler(this.MnItemInvoive_Click);
             // 
             // addInvoiceToolStripMenuItem
             // 

@@ -414,8 +414,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.EditDrugInforMenu;
             this.Name = "InvoicesInput";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InvoicesInput";
             this.Load += new System.EventHandler(this.InvoicesInput_Load);
             this.groupBox1.ResumeLayout(false);
