@@ -23,8 +23,7 @@ namespace Pharmacy
         InvoiceItemServices initser = new InvoiceItemServices();
         public FrmInvoiceManager()
         {
-            AccountService accService = new AccountService();
-            Settings.accLogin = accService.getById(2);
+           
             InitializeComponent();
         }
         int index;
@@ -105,8 +104,10 @@ namespace Pharmacy
             {
                 List<Criterion> data = new List<Criterion>();
                 Criterion refundcol = new Criterion(Constants.INV_REFUND, true);
+                Criterion userchange = new Criterion(Constants.INV_CREARTEBY, Settings.accLogin.Id);
 
                 data.Add(refundcol);
+                data.Add(userchange);
                 bool i = invser.updatedBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), data);
                 if (i)
                 {
@@ -141,11 +142,17 @@ namespace Pharmacy
         private void bt_delete_Click(object sender, EventArgs e)
         {
             if (Settings.accLogin.Type.Trim() == "Admin")
+            {
                 if (initser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
                     if (invser.deleteBy(Constants.INV_ID, dbmain.Rows[index - 1][Constants.INV_ID].ToString().Trim(), true))
                     {
+                        MessageBox.Show("Delete Successful");
                         init();
                     }
+            }
+            else
+            { MessageBox.Show("You are not Admin"); }
+                    
         }
 
         private void bt_exit_Click(object sender, EventArgs e)

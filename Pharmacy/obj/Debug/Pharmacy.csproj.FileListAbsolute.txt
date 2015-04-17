@@ -134,3 +134,4 @@ C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.Properties.Res
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csproj.GenerateResource.Cache
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy.mdf
 C:\Users\n01009181\Desktop\ProjectNET\Pharmacy\bin\Debug\Pharmacy_log.ldf
+C:\Users\khaiv_000\Desktop\NetProject\Phase2\ProjectNET\Pharmacy\obj\Debug\Pharmacy.csprojResolveAssemblyReference.cache

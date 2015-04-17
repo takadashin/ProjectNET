@@ -97,6 +97,7 @@
             // dtp_createdate
             // 
             this.dtp_createdate.CustomFormat = "MM-DD-YYYY";
+            this.dtp_createdate.Enabled = false;
             this.dtp_createdate.Location = new System.Drawing.Point(259, 19);
             this.dtp_createdate.Name = "dtp_createdate";
             this.dtp_createdate.Size = new System.Drawing.Size(140, 20);
