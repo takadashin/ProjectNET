@@ -46,7 +46,7 @@ namespace Pharmacy.InvoiceSearch
             if (dtv_display.RowCount > 0)
             {
                
-                this.inip.searchcusvalue(dtv_display.SelectedRows[0].Cells[Constants.CUST_NAME].Value.ToString().Trim(), dtv_display.SelectedRows[0].Cells[Constants.ID].Value.ToString().Trim());
+                this.inip.searchcusvalue(dtv_display.Rows[dtv_display.CurrentCell.RowIndex].Cells[Constants.CUST_NAME].Value.ToString().Trim(), dtv_display.Rows[dtv_display.CurrentCell.RowIndex].Cells[Constants.ID].Value.ToString().Trim());
                this.Close();
             }
         }

@@ -28,9 +28,9 @@ namespace Pharmacy.InvoiceSearch
 
         private void bt_ok_Click(object sender, EventArgs e)
         {
-            if (dtv_display.RowCount > 0)
+            if (dtv_display.RowCount > 0 && dtv_display.CurrentCell.RowIndex >= 0)
             {
-                this.inip.searchdrugvalue(dtv_display.SelectedRows[0].Cells[Constants.DRUG_NAME].Value.ToString().Trim(), dtv_display.SelectedRows[0].Cells[Constants.ID].Value.ToString().Trim());
+                this.inip.searchdrugvalue(dtv_display.Rows[dtv_display.CurrentCell.RowIndex].Cells[Constants.DRUG_NAME].Value.ToString().Trim(), dtv_display.Rows[dtv_display.CurrentCell.RowIndex].Cells[Constants.ID].Value.ToString().Trim());
                 this.Close();
             }
         }

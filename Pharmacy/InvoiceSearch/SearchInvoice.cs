@@ -40,7 +40,7 @@ namespace Pharmacy.InvoiceSearch
         {
             if (dtv_display.RowCount > 0)
             {
-                this.inip.searchinvoicevalue(dtv_display.SelectedRows[0].Cells[Constants.INV_ID].Value.ToString().Trim());
+                this.inip.searchinvoicevalue(dtv_display.Rows[dtv_display.CurrentCell.RowIndex].Cells[Constants.INV_ID].Value.ToString().Trim());
                 this.Close();
             }
         }

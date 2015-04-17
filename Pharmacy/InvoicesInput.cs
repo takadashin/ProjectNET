@@ -113,30 +113,45 @@ namespace Pharmacy
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int item = int.Parse( tb_qty.Text);
-            int exitem = 0;
-            foreach(DataRow rw in dbitem.Rows)
+            if(tb_qty.Text.Trim() != "" && tb_paideach.Text.Trim()!= "")
             {
-                if(rw[Constants.INIT_DRUG].ToString().Trim() == lb_drugid.Text.Trim())
-                    exitem += int.Parse(rw[Constants.INIT_QTY].ToString().Trim());
-            }
-            if((item+exitem) <= maxitem){
-            if (lb_drugid.Text != string.Empty && tb_qty.Text != String.Empty && tb_paideach.Text != string.Empty)
-                dbitem.Rows.Add(tb_id.Text,dbitem.Rows.Count+1,lb_drugid.Text,tb_qty.Text,tb_paideach.Text);
+                int item = int.Parse( tb_qty.Text);
+                int exitem = 0;
+                foreach(DataRow rw in dbitem.Rows)
+                {
+                    if(rw[Constants.INIT_DRUG].ToString().Trim() == lb_drugid.Text.Trim())
+                        exitem += int.Parse(rw[Constants.INIT_QTY].ToString().Trim());
+                }
+                if((item+exitem) <= maxitem){
+                if (lb_drugid.Text != string.Empty && tb_qty.Text != String.Empty && tb_paideach.Text != string.Empty)
+                    dbitem.Rows.Add(tb_id.Text,dbitem.Rows.Count+1,lb_drugid.Text,tb_qty.Text,tb_paideach.Text);
+                }
+                else
+                    MessageBox.Show("Too many item!!!");
+          
+                dtv_drug.DataSource = dbitem;
+                changetext();
             }
             else
-                MessageBox.Show("Too many item!!!");
-          
-            dtv_drug.DataSource = dbitem;
-            changetext();
+            {
+                MessageBox.Show("Please fill the important field when edit item in invoice");
+            }
         }
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             int index = dtv_drug.CurrentCell.RowIndex;
-            dbitem.Rows.RemoveAt(index);
-            dtv_drug.DataSource = dbitem;
-            changetext();
+            if (index >= 0)
+            {
+                dbitem.Rows.RemoveAt(index);
+                dtv_drug.DataSource = dbitem;
+                changetext();
+            }
+            else
+            {
+                MessageBox.Show("Please choose record when remove");
+            }
         }
 
         private void tb_drug_Enter(object sender, EventArgs e)
@@ -151,12 +166,19 @@ namespace Pharmacy
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int index = dtv_drug.CurrentCell.RowIndex;
-            dbitem.Rows[index][Constants.INIT_DRUG] = lb_drugid.Text;
-            dbitem.Rows[index][Constants.INIT_QTY] = tb_qty.Text;
-            dbitem.Rows[index][Constants.INIT_PAID] = tb_paideach.Text;
-            dtv_drug.DataSource = dbitem;
-            changetext();
+            if(tb_qty.Text.Trim() != "" && tb_paideach.Text.Trim()!= "")
+            {
+                int index = dtv_drug.CurrentCell.RowIndex;
+                dbitem.Rows[index][Constants.INIT_DRUG] = lb_drugid.Text;
+                dbitem.Rows[index][Constants.INIT_QTY] = tb_qty.Text;
+                dbitem.Rows[index][Constants.INIT_PAID] = tb_paideach.Text;
+                dtv_drug.DataSource = dbitem;
+                changetext();
+            }
+            else
+            {
+                MessageBox.Show("Please fill the important field when add item in invoice");
+            }
         }
 
         private void dtv_drug_CellContentClick(object sender, DataGridViewCellEventArgs e)
