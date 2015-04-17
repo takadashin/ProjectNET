@@ -94,6 +94,7 @@ namespace Pharmacy
             String[] context = invService.getdrugidfromsearch(tb_drug.Text).Split('|');
             lb_drugid.Text = context[0];
             maxitem = int.Parse( context[1]);
+            tb_paideach.Text = context[2];
 
         }
 

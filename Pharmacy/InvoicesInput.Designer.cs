@@ -227,6 +227,7 @@
             // 
             this.tb_paideach.Location = new System.Drawing.Point(678, 44);
             this.tb_paideach.Name = "tb_paideach";
+            this.tb_paideach.ReadOnly = true;
             this.tb_paideach.Size = new System.Drawing.Size(111, 20);
             this.tb_paideach.TabIndex = 11;
             this.tb_paideach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_qty_KeyPress);
