@@ -176,7 +176,7 @@ namespace Pharmacy
                     int exitem = 0;
                     foreach (DataRow rw in dbitem.Rows)
                     {
-                        if (rw[Constants.INIT_DRUG].ToString().Trim() == lb_drugid.Text.Trim())
+                        if (rw[Constants.INIT_DRUG].ToString().Trim() == lb_drugid.Text.Trim()&& rw[Constants.INIT_ITEM].ToString().Trim() != (index+1).ToString().Trim())
                             exitem += int.Parse(rw[Constants.INIT_QTY].ToString().Trim());
                     }
                     if ((item + exitem) <= maxitem)
