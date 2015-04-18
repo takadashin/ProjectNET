@@ -104,7 +104,7 @@ namespace Pharmacy
             {
                 List<Criterion> data = new List<Criterion>();
                 Criterion refundcol = new Criterion(Constants.INV_REFUND, true);
-                Criterion userchange = new Criterion(Constants.INV_CREARTEBY, Settings.accLogin.Id);
+                Criterion userchange = new Criterion(Constants.INV_MODIFYBY, Settings.accLogin.Id);
 
                 data.Add(refundcol);
                 data.Add(userchange);

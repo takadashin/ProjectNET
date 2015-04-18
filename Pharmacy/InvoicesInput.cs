@@ -167,18 +167,43 @@ namespace Pharmacy
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(tb_qty.Text.Trim() != "" && tb_paideach.Text.Trim()!= "")
+            int index = dtv_drug.CurrentCell.RowIndex;
+            if (index > -1)
             {
-                int index = dtv_drug.CurrentCell.RowIndex;
-                dbitem.Rows[index][Constants.INIT_DRUG] = lb_drugid.Text;
-                dbitem.Rows[index][Constants.INIT_QTY] = tb_qty.Text;
-                dbitem.Rows[index][Constants.INIT_PAID] = tb_paideach.Text;
-                dtv_drug.DataSource = dbitem;
-                changetext();
-            }
-            else
-            {
-                MessageBox.Show("Please fill the important field when add item in invoice");
+                if (tb_qty.Text.Trim() != "" && tb_paideach.Text.Trim() != "")
+                {
+                    int item = int.Parse(tb_qty.Text);
+                    int exitem = 0;
+                    foreach (DataRow rw in dbitem.Rows)
+                    {
+                        if (rw[Constants.INIT_DRUG].ToString().Trim() == lb_drugid.Text.Trim())
+                            exitem += int.Parse(rw[Constants.INIT_QTY].ToString().Trim());
+                    }
+                    if ((item + exitem) <= maxitem)
+                    {
+                        if (lb_drugid.Text != string.Empty && tb_qty.Text != String.Empty && tb_paideach.Text != string.Empty)
+                        {
+
+                            dbitem.Rows[index][Constants.INIT_DRUG] = lb_drugid.Text;
+                            dbitem.Rows[index][Constants.INIT_QTY] = tb_qty.Text;
+                            dbitem.Rows[index][Constants.INIT_PAID] = tb_paideach.Text;
+                        }
+                    }
+                    else
+                        MessageBox.Show("Too many item!!!");
+
+                    dtv_drug.DataSource = dbitem;
+                    changetext();
+
+
+
+                    dtv_drug.DataSource = dbitem;
+                    changetext();
+                }
+                else
+                {
+                    MessageBox.Show("Please fill the important field when add item in invoice");
+                }
             }
         }
 

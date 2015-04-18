@@ -59,6 +59,7 @@ namespace Pharmacy.Utils
         public const string INV_DOCDES = "IN_DoctorDes";
         public const string INV_CREARTEBY = "CreateBy";
         public const string INV_REFUND = "Refund";
+        public const string INV_MODIFYBY = "ModifyBy";
         //Invoices Items
         public const string INIT_TB = "InvoicesItems";
         public const string INIT_INID = "In_ID";
